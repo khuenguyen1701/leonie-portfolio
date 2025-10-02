@@ -18,7 +18,7 @@ export const Home = () => {
                     <img src={prj} alt="View Projects" className="absolute -top-60 -left-80 w-100 h-100 object-cover rotate-[-15deg] rounded-lg transition-transform duration-300 hover:-translate-y-3"/>
                 </a>
                 {/* Resume Button */}
-                <a href="https://drive.google.com/file/d/1ufypBgUhtkeEYKSbFgcV3Wl3kP_540mz/view?usp=sharing" className="">
+                <a href="https://drive.google.com/file/d/1NERYJTzTufiemqFHW4cnenyQJ41tWgZK/view?usp=sharing" className="">
                     <img src={resume} alt="View Resume" className="absolute -top-60 -right-80 w-100 h-100 object-cover rotate-[15deg] rounded-lg transition-transform duration-300 hover:-translate-y-3"/>
                 </a>
                 {/* About Button */}
