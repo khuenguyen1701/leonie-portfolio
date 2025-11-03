@@ -4,33 +4,46 @@ import cake from "./img/cake.png"
 
 export const About = () => {
     const languages = [
-        "Java", 
         "Python", 
+        "Java", 
         "C/ C++", 
         "JavaScript", 
+        "TypeScript",
         "HTML/ CSS",
         "Kotlin",
-    ];
-
-    const developerTools = [
-        "Azure", 
+        "SQL",
+        "Numpy",
+        "Tensorflow",
+        "Matplotlib",
+        "Azure",
         "AWS",
-        "React",
-        "MongoDB", 
+        "React.js",
+        "Vue.js",
+        "Node.js",
+        "MongoDB",
         "Flutter",
         "Bootstrap",
         "Git",
-        "pandas",
-        "NumPy",
-        "Tensorflow",
-        "Matplotlib",
-        "Vercel",
+        "VS Code",
+        "Jupyter",
+        "Android Studio",
+        "XCode"
+    ];
+
+    const developerTools = [
+        "Figma", 
+        "Adobe Animate",
+        "Adobe Illustrator",
+        "Adobe Photoshop", 
+        "Davinci Resolve",
+        "Procreate",
+        "Canva"
     ];
 
     return <section id="about" className="min-h-screen flex items-center justify-center py-20 bg-white">
         <RevealOnScroll>
         <div className="max-w-4xl mx-auto px-4">
-            <h2 className="text-5xl font-bold mb-8 bg-gradient-to-r from-rose-700 to-rose-300 bg-clip-text text-transparent text-center">
+            <h2 className="text-5xl font-bold mb-8 bg-gradient-to-r text-[#394c5c] bg-clip-text text-center">
                 {""}ABOUT ME</h2>
             <div className="flex justify-center mt-20">
                 <div className="relative -top-10 w-65 h-65">
@@ -52,18 +65,18 @@ export const About = () => {
 
 {/* glass rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all */}
         <div className="">
-            <h2 style={{ color: "#a8042f" }} className="text-3xl font-bold mb-8 bg-gradient-to-r from-rose-700 to-rose-300 bg-clip-text text-transparent text-center">
+            <h2 style={{ color: "#041a38" }} className="text-3xl font-bold mb-8 bg-clip-text text-transparent text-center">
             {""}MY TECH STACK</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Frontend */}
-            <div className="rounded-xl p-4 bg-rose-100 hover:-translate-y-1 transition-all">
-                <h3 className="text-2xl font-bold mb-3 text-rose-700">Frontend</h3>
+            <div className="rounded-xl p-4 bg-[#d8e7ee] hover:-translate-y-1 transition-all">
+                <h3 className="text-2xl font-bold mb-3 text-[#041a38]">Coding Skills</h3>
                 <div className="flex flex-wrap gap-2">
                     {languages.map((tech, key) => (
                     <span
                     key={key}
-                    className="bg-rose-500/10 text-rose-500 py-1 px-3 rounded-full text-sm 
-                                hover:bg-rose-600 hover:text-white transition"
+                    className="bg-[#97d4f1] text-[#041a38] py-1 px-3 rounded-full text-sm 
+                                hover:bg-[#041a38] hover:text-white transition"
                     >
                     {tech}
                     </span>
@@ -72,14 +85,14 @@ export const About = () => {
             </div>
 
             {/* Backend */}
-            <div className="rounded-xl p-4 bg-rose-100 hover:-translate-y-1 transition-all">
-                <h3 className="text-2xl font-bold mb-3 text-rose-700">Backend</h3>
+            <div className="rounded-xl p-4 bg-[#d8e7ee] hover:-translate-y-1 transition-all">
+                <h3 className="text-2xl font-bold mb-3 text-[#041a38]">Design Skills</h3>
                 <div className="flex flex-wrap gap-2">
                 {developerTools.map((tech, key) => (
                     <span
                     key={key}
-                    className="bg-rose-500/10 text-rose-500 py-1 px-3 rounded-full text-sm 
-                                hover:bg-rose-600 hover:text-white transition"
+                    className="bg-[#97d4f1] text-[#041a38] py-1 px-3 rounded-full text-sm 
+                                hover:bg-[#041a38] hover:text-white transition"
                     >
                     {tech}
                     </span>
@@ -92,59 +105,63 @@ export const About = () => {
             <div className="space-y-6">
               {/* EXPERIENCE */}
               <div className="border-white/10 border hover:-translate-y-1 transition-all">
-              <h2 style={{ color: "#a8042f" }} className="text-3xl font-bold mt-10 mb-8 bg-gradient-to-r from-rose-700 to-rose-300 bg-clip-text text-transparent text-center">
+              <h2 style={{ color: "#041a38" }} className="text-3xl font-bold mt-10 mb-8 bg-gradient-to-r from-rose-700 to-rose-300 bg-clip-text text-transparent text-center">
               {""}EXPERIENCE</h2>
-                <div className="bg-rose-500/10 text-rose-500 py-10 px-3 rounded-lg text-sm text-black space-y-2">
+                <div className="bg-[#d8e7ee] py-10 px-12 rounded-lg text-sm text-black space-y-2">
                     <div className="flex justify-between items-center">
-                      <h3 className="text-2xl font-bold text-rose-700">Software Engineer Intern</h3>
-                      <h3 className="text-xl text-gray-500 italic">Sept. 2025</h3>
+                      <h3 className="text-2xl font-bold text-[#041a38]">Software Engineer Intern</h3>
+                      <h3 className="text-lg text-gray-700 italic">Sep 25' - Present</h3>
                     </div>
-                    <h3 className="text-xl text-gray-500 italic">IpserLab LLC</h3>
+                    <h3 className="text-lg text-gray-700 italic">IpserLab LLC</h3>
                     
                     <ul className="list-disc list-inside text-gray-700 space-y-2">
-                      <li>Program and test website; implement web features in React that aligns with company’s business goals.</li>    
+                      <li>Build interactive React + Tailwind components for Tectra’s platform, integrating REST APIs for dynamic project and user data.</li>    
+                      <li>Collaborate on modular frontend architecture for profiles, projects, and messaging, cutting code redundancy by 30%.</li>
                     </ul>
                 </div>
               </div>
 
               <div className="border-white/10 border hover:-translate-y-1 transition-all">
-                <div className="bg-rose-500/10 text-rose-500 py-10 px-3 rounded-lg text-sm text-black space-y-2">
+                <div className="bg-[#d8e7ee] py-10 px-12 rounded-lg text-sm text-black space-y-2">
                     <div className="flex justify-between items-center">
-                      <h3 className="text-2xl font-bold text-rose-700">Raspberry Pi Researcher </h3>
-                      <h3 className="text-xl text-gray-500 italic">Aug. 2025 – Present</h3>
+                      <h3 className="text-2xl font-bold text-[#041a38]">Raspberry Pi Researcher </h3>
+                      <h3 className="text-lg text-gray-700 italic">Aug 25' – Present</h3>
                     </div>
-                    <h3 className="text-xl text-gray-500 italic">DePauw Computer Science Department </h3>
+                    <h3 className="text-lg text-gray-700 italic">DePauw Computer Science Department </h3>
                     
                     <ul className="list-disc list-inside text-gray-700 space-y-2">
-                      <li>Designed and deployed Raspberry Pi-based prototypes integrating Java for image recognition and data analysis.</li>    
+                      <li>Design and deploy computer vision models on Raspberry Pi devices using Java and Python for real-time classification; developed
+an object recognition model to track 100+ campus assets, reducing manual effort by 20%.</li>  
+                      <li>Collect and annotated image datasets from various campus environments to train and evaluate model performance; improved
+classification accuracy by 25%.</li>
                     </ul>
                 </div>
               </div>
 
               <div className="border-white/10 border hover:-translate-y-1 transition-all">
-                <div className="bg-rose-500/10 text-rose-500 py-10 px-3 rounded-lg text-sm text-black space-y-2">
+                <div className="bg-[#d8e7ee] py-10 px-12 rounded-lg text-sm text-black space-y-2">
                     <div className="flex justify-between items-center">
-                      <h3 className="text-2xl font-bold text-rose-700">Software Development Instructor</h3>
-                      <h3 className="text-xl text-gray-500 italic">Jun. 2025 – Aug. 2025</h3>
+                      <h3 className="text-2xl font-bold text-[#041a38]">Software Development Instructor</h3>
+                      <h3 className="text-lg text-gray-700 italic">Jun 25' – Aug 25'</h3>
                     </div>
-                    <h3 className="text-xl text-gray-500 italic">DePauw Computer Science Department </h3>
+                    <h3 className="text-lg text-gray-700 italic">DePauw Computer Science Department </h3>
                     
                     <ul className="list-disc list-inside text-gray-700 space-y-2">
-                      <li>Delivered hands-on coding workshops with one-on-one support to groups of 8-12 students on Python and Java
-                      Programming, AI/ML, Game Design, and Digital Art and Animation with Adobe.</li>  
-                      <li>Guided 100% of students in developing end-to-end technical projects, including AI Chatbots, Image/ Number
-                      Recognition Model; managed 80+ students across multiple sessions utilizing effective classroom strategies.</li>  
+                      <li>Led immersive workshops on Python, Java, Game Development, and Digital Art and Animation, providing individualized
+guidance to groups of 8-12 students and mentoring 80+ learners in debugging, interface design, and version control.</li>  
+                      <li>Guided 100% of students in developing end-to-end technical projects from AI Chatbots to Image/ Number Recognition Model
+while managing multiple sessions and fostering creativity and problem-solving skills.</li>  
                     </ul>
                 </div>
               </div>
 
               <div className="border-white/10 border hover:-translate-y-1 transition-all">
-                <div className="bg-rose-500/10 text-rose-500 py-10 px-3 rounded-lg text-sm text-black space-y-2">
+                <div className="bg-[#d8e7ee] py-10 px-12 rounded-lg text-sm text-black space-y-2">
                     <div className="flex justify-between items-center">
-                      <h3 className="text-2xl font-bold text-rose-700">Computer Science Teaching Assistant</h3>
-                      <h3 className="text-xl text-gray-500 italic">Sep. 2024 – Sep. 2025</h3>
+                      <h3 className="text-2xl font-bold text-[#041a38]">Computer Science Teaching Assistant</h3>
+                      <h3 className="text-lg text-gray-700 italic">Sep 24' – Sep 25'</h3>
                     </div>
-                    <h3 className="text-xl text-gray-500 italic">DePauw University</h3>
+                    <h3 className="text-lg text-gray-700 italic">DePauw University</h3>
                     
                     <ul className="list-disc list-inside text-gray-700 space-y-2">
                       <li>Facilitated 10 hours per week of one-on-one Java programming support for 60+ students in Introduction to
@@ -156,12 +173,12 @@ export const About = () => {
               </div>
 
               <div className="border-white/10 border hover:-translate-y-1 transition-all">
-                <div className="bg-rose-500/10 text-rose-500 py-10 px-3 rounded-lg text-sm text-black space-y-2">
+                <div className="bg-[#d8e7ee] py-10 px-12 rounded-lg text-sm text-black space-y-2">
                     <div className="flex justify-between items-center">
-                      <h3 className="text-2xl font-bold text-rose-700">Technology Intern</h3>
-                      <h3 className="text-xl text-gray-500 italic">Sep. 2023 – Sep. 2024</h3>
+                      <h3 className="text-2xl font-bold text-[#041a38]">Technology Intern</h3>
+                      <h3 className="text-lg text-gray-700 italic">Sep 23' – Sep. 24'</h3>
                     </div>
-                    <h3 className="text-xl text-gray-500 italic">DePauw University</h3>
+                    <h3 className="text-lg text-gray-700 italic">DePauw University</h3>
                     
                     <ul className="list-disc list-inside text-gray-700 space-y-2">
                       <li>Built 15+ multidisciplinary projects integrating data analysis (Tableau Visualization), spatial storytelling (ArcGIS
@@ -174,9 +191,9 @@ export const About = () => {
         <div>
   {/* LEADERSHIP */}
   <h2
-    style={{ color: "#a8042f" }}
+    style={{ color: "#041a38" }}
     className="text-3xl font-bold mt-10 mb-8 bg-gradient-to-r 
-               from-rose-700 to-rose-300 bg-clip-text text-transparent text-center"
+             bg-clip-text text-transparent text-center"
   >
     LEADERSHIP
   </h2>
@@ -184,13 +201,13 @@ export const About = () => {
   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
     {/* President */}
     <div className="border-white/10 border hover:-translate-y-1 transition-all">
-      <div className="bg-rose-500/10 text-rose-500 py-10 px-3 rounded-lg text-sm text-black space-y-2">
+      <div className="bg-[#d8e7ee] py-10 px-12 rounded-lg text-sm text-black space-y-2">
         <div className="flex justify-between items-center">
-          <h3 className="text-2xl font-bold text-rose-700">President</h3>
-          <h3 className="text-xl text-gray-500 italic">Jul. 2025</h3>
+          <h3 className="text-2xl font-bold text-[#041a38]">President</h3>
+          <h3 className="text-lg text-gray-700 italic">Jul 25'</h3>
         </div>
-        <h3 className="text-xl text-gray-500 italic">
-          DePauw Women in Computer Science Club (ACM-W Chapter)
+        <h3 className="text-lg text-gray-700 italic">
+          ACM-W DePauw University Chapter
         </h3>
         <ul className="list-disc list-inside text-gray-700 space-y-2">
           <li>
@@ -204,12 +221,12 @@ export const About = () => {
 
     {/* Treasurer */}
     <div className="border-white/10 border hover:-translate-y-1 transition-all">
-      <div className="bg-rose-500/10 text-rose-500 py-10 px-3 rounded-lg text-sm text-black space-y-2">
+      <div className="bg-[#d8e7ee] py-10 px-12 rounded-lg text-sm text-black space-y-2">
         <div className="flex justify-between items-center">
-          <h3 className="text-2xl font-bold text-rose-700">Treasurer</h3>
-          <h3 className="text-xl text-gray-500 italic">Jul. 2025</h3>
+          <h3 className="text-2xl font-bold text-[#041a38]">Treasurer</h3>
+          <h3 className="text-lg text-gray-700 italic">Jul. 2025</h3>
         </div>
-        <h3 className="text-xl text-gray-500 italic">
+        <h3 className="text-lg text-gray-700 italic">
           DePauw International Student Association
         </h3>
         <ul className="list-disc list-inside text-gray-700 space-y-2">

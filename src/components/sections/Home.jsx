@@ -9,33 +9,44 @@ export const Home = () => {
     return (
         <section 
             id="home"
-            className="min-h-screen flex items-center justify-center relative bg-red-100">
+            className="min-h-screen flex items-center justify-center relative bg-[#d8e7ee]">
         
             <RevealOnScroll>
-            <div className="text-center z-10 px-4">
-               {/* Project Button */}
-                <a href="#projects" className="">
-                    <img src={prj} alt="View Projects" className="absolute -top-60 -left-80 w-100 h-100 object-cover rotate-[-15deg] rounded-lg transition-transform duration-300 hover:-translate-y-3"/>
+            <div className="mx-auto max-w-6xl grid grid-cols-2 gap-12 items-center">
+            {/* LEFT: links */}
+            <nav className="flex flex-col justify-center md:justify-start gap-6 text-2xl font-pixelify text-left md:pl-8">
+                <a href="#projects" className="text-[#394c5c] hover:text-[#041a38] transition">projects</a>
+                <a
+                href="https://drive.google.com/file/d/1e7mJPeCmKgCbrYojQ2q1UFeHbSvVQyBB/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#394c5c] hover:text-[#041a38] transition"
+                >
+                resume
                 </a>
-                {/* Resume Button */}
-                <a href="https://drive.google.com/file/d/1e7mJPeCmKgCbrYojQ2q1UFeHbSvVQyBB/view?usp=sharing" className="">
-                    <img src={resume} alt="View Resume" className="absolute -top-60 -right-80 w-100 h-100 object-cover rotate-[15deg] rounded-lg transition-transform duration-300 hover:-translate-y-3"/>
-                </a>
-                {/* About Button */}
-                <a href="#about" className="">
-                    <img src={about} alt="View About" className="absolute top-25 -left-70 w-100 h-100 object-cover rotate-[10deg] rounded-lg transition-transform duration-300 hover:-translate-y-3"/>
-                </a>
-                {/* Contact Buton */}
-                <a href="#about" className="">
-                    <img src={contact} alt="View Contact" className="absolute top-25 -right-80 w-100 h-100 object-cover rotate-[-10deg] rounded-lg transition-transform duration-300 hover:-translate-y-3"/>
-                </a>
+                <a href="#about" className="text-[#394c5c] hover:text-[#041a38] transition">about</a>
+                <a href="#contact" className="text-[#394c5c] hover:text-[#041a38] transition">contact</a>
+            </nav>
 
-                <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-rose-700 to-rose-300 bg-clip-text text-transparent leading-tight">Xin chào!<br/>Leonie nè.</h1>
+            {/* RIGHT: the rest */}
+            <div className="space-y-6 text-center md:text-left">
+            <h1 className="text-5xl md:text-6xl font-bold text-[#041a38] leading-tight">
+                welcome to my portfolio
+            </h1>
 
-                <p style={{ fontFamily: "Pixelify Sans, sans-serif" }} className="text-gray-600 text-2xl mb-8 max-w-lg mx-auto">I'm glad you're here!</p>
+            <p
+                className="text-gray-600 text-2xl max-w-lg"
+            >
+                I'm glad you're here!
+            </p>
 
-                <img src={homeAva} alt="View Contact" className="absolute top-35 right-0 w-100 h-100 object-cover rotate-[-5deg] rounded-lg transition-transform duration-300 hover:-translate-y-3"/>
+            <img
+                src={homeAva}
+                alt="avatar"
+                className="w-60 h-auto object-cover rounded-xl transition-transform duration-300 hover:-translate-y-2"
+            />
             </div>
+        </div>
         </RevealOnScroll>
         </section>
     )
