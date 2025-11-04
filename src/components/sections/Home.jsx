@@ -12,52 +12,50 @@ export const Home = () => {
           {/* LEFT COLUMN */}
           <div className="relative flex flex-col items-center justify-center text-center translate-y-4 sm:translate-y-6">
             {/* TEXT ABOVE IMAGE */}
-            <div className="absolute -top-8 md:-top-12 z-10 w-full flex flex-col items-center">
-              <h1 className="text-5xl md:text-6xl font-bold text-[#041a38] leading-tight">
+            <div className="flex flex-col items-center mb-10 md:mb-12">
+            <h1 className="text-5xl md:text-6xl font-bold text-[#041a38] leading-tight">
                 welcome to my portfolio
-              </h1>
-              <p className="text-gray-700 text-2xl mt-3">
-                I'm glad you're here!
-              </p>
+            </h1>
             </div>
 
             {/* IMAGE BELOW */}
             <img
-              src={homeAva}
-              alt="avatar"
-              className="w-[20rem] sm:w-[24rem] md:w-[28rem] lg:w-[30rem] h-auto object-cover rounded-2xl mt-24"
+            src={homeAva}
+            alt="avatar"
+            className="w-[16rem] sm:w-[20rem] md:w-[22rem] lg:w-[24rem] h-auto object-cover rounded-2xl transform animate-float"
             />
           </div>
 
           {/* RIGHT COLUMN */}
-          <nav className="flex flex-col items-center justify-center gap-8 text-3xl font-pixelify text-center translate-y-4 sm:translate-y-6">
-            <a
-              href="#projects"
-              className="text-[#041a38] hover:text-rose-700 transition"
-            >
-              projects
-            </a>
-            <a
-              href="https://drive.google.com/file/d/1zxF_td3WLaTobiZpPT_2bt_ZAyrJhO4T/view?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[#041a38] hover:text-rose-700 transition"
-            >
-              resume
-            </a>
-            <a
-              href="#about"
-              className="text-[#041a38] hover:text-rose-700 transition"
-            >
-              about
-            </a>
-            <a
-              href="#contact"
-              className="text-[#041a38] hover:text-rose-700 transition"
-            >
-              contact
-            </a>
-          </nav>
+        <nav className="flex flex-col items-center justify-center gap-6 text-3xl font-pixelify text-center p-6 md:p-8">
+        <p className="text-[#041a38] transition">I'm glad you're here!</p>
+        <a
+            href="#projects"
+            className="text-[#041a38] hover:text-rose-700 transition"
+        >
+            🐟 projects 🐟 
+        </a>
+        <a
+            href="https://drive.google.com/file/d/1zxF_td3WLaTobiZpPT_2bt_ZAyrJhO4T/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#041a38] hover:text-rose-700 transition"
+        >
+            🐙 resume 🐙 
+        </a>
+        <a
+            href="#about"
+            className="text-[#041a38] hover:text-rose-700 transition"
+        >
+            🐚 about 🐚
+        </a>
+        <a
+            href="#contact"
+            className="text-[#041a38] hover:text-rose-700 transition"
+        >
+            🦦 contact 🦦
+        </a>
+        </nav>
         </div>
       </RevealOnScroll>
     </section>
