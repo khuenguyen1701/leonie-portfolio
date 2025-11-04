@@ -47,7 +47,7 @@ export const About = () => {
         <RevealOnScroll>
         <div className="max-w-4xl mx-auto px-4">
             <h2 className="text-5xl font-bold mb-8 bg-gradient-to-r text-[#394c5c] bg-clip-text text-center">
-                {""}ABOUT ME</h2>
+                {""}about me</h2>
             <div className="flex justify-center mt-20">
                 <div className="relative -top-10 w-65 h-65">
                     <img src={ava} alt="avatar" className="w-full h-full object-cover rounded-full"/>
@@ -68,12 +68,12 @@ export const About = () => {
 
 {/* glass rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all */}
         <div className="">
-            <h2 style={{ color: "#041a38" }} className="text-3xl font-bold mb-8 bg-clip-text text-transparent text-center">
-            {""}MY TECH STACK</h2>
+            <h2 style={{ color: "#041a38" }} className="text-5xl font-bold mb-8 bg-gradient-to-r text-[#394c5c] bg-clip-text text-center">
+            {""}my tech stack</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Frontend */}
             <div className="rounded-xl p-4 bg-[#d8e7ee] hover:-translate-y-1 transition-all">
-                <h3 className="text-2xl font-bold mb-3 text-[#041a38]">Coding Skills</h3>
+                <h3 className="text-2xl font-bold mb-3 text-[#041a38]">coding skills</h3>
                 <div className="flex flex-wrap gap-2">
                     {languages.map((tech, key) => (
                     <span
@@ -89,7 +89,7 @@ export const About = () => {
 
             {/* Backend */}
             <div className="rounded-xl p-4 bg-[#d8e7ee] hover:-translate-y-1 transition-all">
-                <h3 className="text-2xl font-bold mb-3 text-[#041a38]">Design Skills</h3>
+                <h3 className="text-2xl font-bold mb-3 text-[#041a38]">design skills</h3>
                 <div className="flex flex-wrap gap-2">
                 {developerTools.map((tech, key) => (
                     <span
@@ -108,8 +108,8 @@ export const About = () => {
             <div className="space-y-6">
               {/* EXPERIENCE */}
               <div className="border-white/10 border hover:-translate-y-1 transition-all">
-              <h2 style={{ color: "#041a38" }} className="text-3xl font-bold mt-10 mb-8 bg-gradient-to-r from-rose-700 to-rose-300 bg-clip-text text-transparent text-center">
-              {""}EXPERIENCE</h2>
+              <h2 style={{ color: "#041a38" }} className="text-5xl font-bold mb-8 bg-gradient-to-r text-[#394c5c] bg-clip-text text-center mt-10">
+              {""}experience</h2>
                 <div className="bg-[#d8e7ee] py-10 px-12 rounded-lg text-sm text-black space-y-2">
                     <div className="flex justify-between items-center">
                       <h3 className="text-2xl font-bold text-[#041a38]">Software Engineer Intern</h3>
@@ -195,10 +195,9 @@ while managing multiple sessions and fostering creativity and problem-solving sk
   {/* LEADERSHIP */}
   <h2
     style={{ color: "#041a38" }}
-    className="text-3xl font-bold mt-10 mb-8 bg-gradient-to-r 
-             bg-clip-text text-transparent text-center"
+    className="text-5xl font-bold mb-8 bg-gradient-to-r text-[#394c5c] bg-clip-text text-center mt-10"
   >
-    LEADERSHIP
+    leadership
   </h2>
 
   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

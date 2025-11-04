@@ -22,7 +22,7 @@ export const Home = () => {
             <img
             src={homeAva}
             alt="avatar"
-            className="w-[16rem] sm:w-[20rem] md:w-[22rem] lg:w-[24rem] h-auto object-cover rounded-2xl transform animate-float"
+            className="w-[16rem] sm:w-[20rem] md:w-[22rem] lg:w-[24rem] h-auto object-cover rounded-2xl transform animate-float -mt-5"
             />
           </div>
 

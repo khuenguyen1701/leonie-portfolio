@@ -17,9 +17,9 @@ export const Projects = () => {
     className="min-h-screen flex items-center justify-center py-20 bg-[#d8e7ee]">
         <RevealOnScroll>
         <div className="w-full mx-auto px-10">
-        <h2 style={{ color: "#041a38" }} className="text-5xl font-bold mb-15 bg-gradient-to-r from-rose-700 to-rose-300 bg-clip-text text-transparent text-center">
+        <h2 style={{ color: "#041a38" }} className="text-5xl font-bold mb-8 bg-gradient-to-r text-[#394c5c] bg-clip-text text-center">
             {""}
-        PROJECTS</h2>
+        projects</h2>
        <div className=" grid grid-cols-1 md:grid-cols-3 gap-10">
         <div className="flex flex-col p-5 rounded-xl border border-white/10 bg-[#041a38] hover:-translate-y-1 hover:border-rose-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition"> 
             <h3 className="text-2xl font-bold text-white flex justify-center">PawRides</h3>
