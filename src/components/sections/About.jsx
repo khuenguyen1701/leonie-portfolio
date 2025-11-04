@@ -1,6 +1,9 @@
 import {RevealOnScroll} from "../RevealOnScroll";
 import ava from "./img/ava.png"
 import cake from "./img/cake.png"
+import wicsFm from "./img/wics-fm.JPG";
+import wicsGs from "./img/wics-gs.JPG";
+import disa from "./img/disa.png";
 
 export const About = () => {
     const languages = [
@@ -216,8 +219,23 @@ while managing multiple sessions and fostering creativity and problem-solving sk
             initiatives to foster a supportive community for DePauw’s Women in Tech.
           </li>
         </ul>
+        <div className="flex justify-center items-center mt-8">
+        <div className="flex flex-col justify-center items-center mt-8 gap-4">
+          <img
+            src={wicsFm}
+            alt="WICS Event 1"
+            className="w-72 h-48 object-cover rounded-lg shadow-md"
+          />
+          <img
+            src={wicsGs}
+            alt="WICS Event 2"
+            className="w-72 h-48 object-cover rounded-lg shadow-md"
+          />
+        </div>
+      </div>
       </div>
     </div>
+
 
     {/* Treasurer */}
     <div className="border-white/10 border hover:-translate-y-1 transition-all">
@@ -231,10 +249,17 @@ while managing multiple sessions and fostering creativity and problem-solving sk
         </h3>
         <ul className="list-disc list-inside text-gray-700 space-y-2">
           <li>
-            
+            Collaborated with DePauw Student Government to coordinate $5000+ to events that promote inclusion and diversity around DePauw campus; compiled and kept track of organization's budget.
           </li>
         </ul>
+        <img
+          src={disa}
+          alt="Disa"
+          className="w-full h-auto object-cover rounded-lg shadow-md"
+        />
       </div>
+
+
     </div>
   </div>
 </div>
