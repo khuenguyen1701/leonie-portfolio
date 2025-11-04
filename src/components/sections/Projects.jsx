@@ -7,6 +7,7 @@ import heartpeak from "./img/heartpeak.png";
 import pictograms from "./img/pictograms.png";
 import theatre from "./img/theatre.png";
 import tropically from "./img/tropically.png";
+import pokemon from "./img/pokemon.png";
 
 
 export const Projects = () => {
@@ -172,7 +173,7 @@ export const Projects = () => {
 
         <div className="flex flex-col p-5 rounded-xl border border-white/10 bg-[#041a38] hover:-translate-y-1 hover:border-rose-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition"> 
             <h3 className="text-2xl font-bold text-white flex justify-center">Pokedex</h3>
-            <img src={heartpeak} alt="avatar" className="my-5 w-100 h-50 object-cover rounded-lg"/>
+            <img src={pokemon} alt="avatar" className="my-5 w-100 h-50 object-cover rounded-lg"/>
             <p className="text-white mb-3">A fun an interactive Pokemon 🕹️ dictionary where users can look for their favorite Pokemon and find their data 📈.
             </p>
             <div className="flex flex-wrap gap-2 mb-4">
